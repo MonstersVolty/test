@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+	--bleux: #3be0fd;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+header {
+	background: 
+	
+rgba(0, 128, 79, 0.61);
+}
+
+header nav {
+	padding: 30px 5% 30px 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #fff;
+	align-items: center;
+}
+header nav h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: var(--bleux);
+	font-family: 'Poor Story', cursive;
+	font-size: 35px;
+}
+header nav .right {
+	display: flex;
+	align-items: center;
+}
+header nav .right p {
+	margin: 0 15px 0 0;
+	color: #ccc;
+}
+header nav .right p:hover {
+	color: black;
+	cursor: pointer;
+}
+header nav .right button {
+	padding: 5px 15px;
+	font-size: 16px;
+	background-color: inherit;
+	border: 1px solid var(--bleux);
+	border-radius: 5px;
+	color: var(--bleux);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+	color: inherit;
+	background-color: var(--bleux);
+}
+/* partie commune au deux section*/
+.presentation {
+	padding: 30px 5%;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.presentation .product-presentation {
+	width: 100%;
+	flex-shrink: 3;
+}
+.presentation .product-presentation h1 {
+	margin: 0;
+	font-size: 4vw;
+	width: 70%;
+	font-family: 'Poor Story', cursive;
+	font-size: 80px;
+}
+.presentation .product-presentation p {
+	font-weight: 300;
+	width: 65%;
+	color: brown;
+}
+.presentation .product-presentation button {
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/* partie commune au deux section*/
+.presentation .image-presentation img {
+    width: 1000px;
+    height: 600px;
+    
+}
+
+.first .product-presentation button {
+	background-color: var(--bleux);
+	color: white;
+	border: 1px solid var(--bleux);
+	transition: background-color 0.5s, color 0.5s;
+}
+.first .product-presentation button:hover {
+	background-color: inherit;
+	color: var(--bleux);
+}
+.first .product-presentation .small-images {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.first .product-presentation .small-images .small {
+	padding: 20px;
+	background-color: #33314d;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+	transition: filter 0.5s;
+}
+.first .product-presentation .small-images .small:hover {
+	filter: brightness(50%);
+}
+.first .product-presentation .small-images .small img {
+	width: 120px;
+}
+
+.second {
+	margin: 0;
+	background-color:pink;
+}
+.second .product-presentation .new {
+	color: var(--bleux);
+}
+.second .product-presentation button {
+	background-color: inherit;
+	border: 1px solid var(--bleux);
+	color: var(--bleux);
+	transition: background-color 0.5s, color 0.5s;
+}
+.second .product-presentation button:hover {
+	background-color: var(--bleux);
+	color: Grey;
+}
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer h3 {
+	color: var(--bleux);
+}
+footer p {
+	cursor: pointer;
+	color:pink;
+}
+footer p:hover {
+	color: pink;
+}
+@media screen and (max-width: 640px) {
+		nav .right p {
+			display: none;
+		}
+	
+		.presentation .product-presentation h1 {
+			font-size: 2em;
+		}
+		.presentation .image-presentation {
+			display: none;
+		}
+		.first .product-presentation .small-images .small img {
+			width: 90px;
+		}
+	
+		footer {
+			justify-content: flex-start;
+		}
+		footer .column {
+			width: 80%;
+		}
+	}
+
+	@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+	@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+	.snip1487 {
+	  font-family: 'Lato', Arial, sans-serif;
+	  position: relative;
+	  overflow: hidden;
+	  margin: 10px;
+	  min-width: 230px;
+	  max-width: 550px;
+	  width: 100%;
+	  color: #fff;
+	  text-align: center;
+	  font-size: 16px;
+	  background-color: #000000;
+	  line-height: 1.5em;
+	}
+	.snip1487 *,
+	.snip1487 *:before,
+	.snip1487 *:after {
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  -webkit-transition: all 0.25s linear;
+	  transition: all 0.25s linear;
+	}
+	.snip1487 img {
+	  width: calc(120%);
+	  backface-visibility: hidden;
+	  vertical-align: top;
+	}
+	.snip1487 figcaption {
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  -webkit-transform: translateY(-25%);
+	  transform: translateY(-25%);
+	  padding: 5px 40px;
+	  opacity: 0;
+	}
+	.snip1487 h3 {
+	  margin: 0;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	}
+	.snip1487 p {
+	  font-weight: 400;
+	  margin: 0;
+	  font-size: 0.9em;
+	}
+	.snip1487 i {
+	  position: absolute;
+	  color: #fff;
+	  font-size: 34.375px;
+	  line-height: 55px;
+	  width: 55px;
+	  bottom: 0;
+	  right: 0;
+	  background-color: #c0392b;
+	  -webkit-transform: translateX(55px);
+	  transform: translateX(55px);
+	}
+	.snip1487 a {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	}
+	.snip1487:hover img,
+	.snip1487.hover img {
+	  zoom: 1;
+	  filter: alpha(opacity=30);
+	  -webkit-opacity: 0.3;
+	  opacity: 0.3;
+	  -webkit-transform: translateX(-40px);
+	  transform: translateX(-40px);
+	}
+	.snip1487:hover figcaption,
+	.snip1487.hover figcaption {
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	  opacity: 1;
+	}
+	.snip1487:hover i,
+	.snip1487.hover i {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0);
+	}
+	
